@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  refactoring-agent:
+    build: .
+    environment:
+      # Replace 'your_openai_api_key' with your actual API key or use Docker secrets
+      - OPENAI_API_KEY=your_openai_api_key
+    command: python main.py 
